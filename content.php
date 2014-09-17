@@ -6,9 +6,9 @@
  */
 ?>
 
-<article class="row">
+<article class="container">
 
-	<header class="container entry-header">
+	<header class="row entry-header">
 		<?php
 
 			if ( is_single() ) :
@@ -18,7 +18,7 @@
 			endif;
 		?>
 
-		<div class="row entry-meta">
+		<div class="entry-meta">
 			<?php
 				edit_post_link( __( 'Edit', 'wpkc' ), '<span class="edit-link">', '</span>' );
 			?>
@@ -26,11 +26,11 @@
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : ?>
-	<div class="entry-summary">
+	<div class="row entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
-	<div class="entry-content">
+	<div class="row entry-content">
 		<?php
 			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wpkc' ) );
 			wp_link_pages( array(

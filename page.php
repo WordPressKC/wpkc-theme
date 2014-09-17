@@ -12,25 +12,18 @@
  */
 
 get_header(); ?>
-<div class="container">
-    <div class="row main-content">
-        <div id="primary" class="row content-area">
-            <div id="content" class="row site-content" role="main">
+<div class="row main-content">
 
-                <?php
-                    // Start the Loop.
-                    while ( have_posts() ) : the_post();
+            <?php
+                // Start the Loop.
+                while ( have_posts() ) : the_post();
 
-                        // Include the page content template.
-                        get_template_part( 'content', 'page' );
+                    // Include the page content template.
+                    get_template_part( 'content', 'page' );
 
-                    endwhile;
-                ?>
+                endwhile;
+            ?>
 
-            </div>
-        </div>
-    </div>
 </div>
-
 <?php
 get_footer();

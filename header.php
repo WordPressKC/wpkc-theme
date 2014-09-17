@@ -71,5 +71,18 @@
             </ul>
         </div><!--/.nav-collapse -->
     </div>
+
+    <?php
+    //    wp_nav_menu( array(
+    //        'container'         => 'div',
+    //        'container_class'   => 'navbar-collapse collapse',
+    //        'depth'             => 5,
+    //        'echo'              => true,
+    //        'menu_class'        => 'nav navbar-nav',
+    //        'theme_location'    => 'wpkc-top-menu',
+    //        'walker'            => new Walker_Nav_Menu_WPKC()
+    //    ) );
+    ?>
+
 </div>
 <div class="container master-container">
