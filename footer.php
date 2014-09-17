@@ -14,7 +14,6 @@
 
     <footer class="row">
 
-        <?php get_sidebar( 'footer' ); ?>
 
      </footer><!-- #colophon -->
 

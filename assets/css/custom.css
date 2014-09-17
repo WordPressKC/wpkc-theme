@@ -1,3 +1,88 @@
+/* globals */
+* {
+    font-family: "Helvetica Neue", "Helvetica";
+}
+
+body {
+    font-size: 16px;
+}
+
 body.admin-bar .navbar {
     margin-top: 32px;
+}
+.master-container {
+    margin-top: 32px;
+}
+
+.red {
+    color: #960018;
+}
+.blue {
+    color: #0A76B2;
+}
+.green {
+    color: #8Dc63f;
+}
+.orange {
+    color: #fcb75c;
+}
+.grey {
+    color: #8e8e8d;
+}
+.redBG {
+    background-color: #960018;
+}
+
+
+
+/* Bootstrap Overrides */
+
+/* background color of menu bar*/
+div.navbar-inverse {
+    background-color: #960018;
+}
+/* background color of active menu item */
+div.navbar-inverse .navbar-nav>.active>a,
+div.navbar-inverse .navbar-nav>.active>a:hover,
+div.navbar-inverse .navbar-nav>.active>a:focus
+{
+    background-color: #0A76B2;
+}
+/* default color of text in menu items */
+div.navbar-inverse .navbar-brand,
+div.navbar-inverse .navbar-nav>li>a
+{
+    color: #fff;
+}
+/* Color of opened menu item */
+div.navbar-inverse .navbar-nav>.open>a,
+div.navbar-inverse .navbar-nav>.open>a:hover,
+div.navbar-inverse .navbar-nav>.open>a:focus {
+    background-color: #0A76B2;
+    color: #fff;
+}
+
+/* color of dropdown text in menu */
+ul.dropdown-menu>li>a,
+li.dropdown-header
+{
+    color: #fff;
+}
+/* background color of dropdown menu */
+ul.navbar-nav>li>.dropdown-menu {
+    background-color: #0A76B2;
+}
+/* color of hovered item in dropdown menu */
+ul.dropdown-menu>li>a:hover,
+ul.dropdown-menu>li>a:focus {
+    background-color: #0A76B2;
+    color: #8Dc63f;
+}
+
+/* font sizes for menu items */
+ul.navbar-nav li,
+ul.navbar-nav a
+{
+    font-size: 1.5rem;
+
 }

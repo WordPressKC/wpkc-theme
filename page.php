@@ -12,37 +12,25 @@
  */
 
 get_header(); ?>
+<div class="container">
+    <div class="row main-content">
+        <div id="primary" class="row content-area">
+            <div id="content" class="row site-content" role="main">
 
-<div id="main-content" class="main-content">
+                <?php
+                    // Start the Loop.
+                    while ( have_posts() ) : the_post();
 
-<?php
-	if ( is_front_page() ) {
-		// Include the featured content template.
-		get_template_part( 'featured-content' );
-	}
-?>
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+                        // Include the page content template.
+                        get_template_part( 'content', 'page' );
 
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
+                    endwhile;
+                ?>
 
-					// Include the page content template.
-					get_template_part( 'content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				endwhile;
-			?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-	<?php get_sidebar( 'content' ); ?>
-</div><!-- #main-content -->
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php
-get_sidebar();
 get_footer();

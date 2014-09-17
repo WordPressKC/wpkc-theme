@@ -7,6 +7,7 @@ class WPKC_Theme {
 
         add_action( 'wp_enqueue_scripts', array( $this, 'enqueueFiles' ) );
         add_theme_support( 'custom-header' );
+        add_theme_support( 'custom-background' );
 
     }
 

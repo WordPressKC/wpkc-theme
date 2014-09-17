@@ -4,7 +4,7 @@
  */
 
 get_header(); ?>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-xs-12">
             <?php
@@ -30,10 +30,8 @@ get_header(); ?>
                 endif;
             ?>
 
-        <?php get_sidebar( 'content' ); ?>
         </div>
     </div>
 </div>
 <?php
-get_sidebar();
 get_footer();
